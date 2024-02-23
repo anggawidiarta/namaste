@@ -1,0 +1,68 @@
+---
+interface Props {
+  title: string;
+  contentDesc: string;
+}
+
+const { title, contentDesc } = Astro.props;
+---
+
+<head
+  ><meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="title" content={title} />
+  <link rel="icon" href="public/favicon.svg" />
+  <meta
+    name="description"
+    content={contentDesc}
+  />
+  <meta
+    property="og:image"
+    content="https://res.cloudinary.com/dmwfd0zhh/image/upload/v1625786788/Portfolio/Frame_5_lchlvc.jpg"
+  />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://seyi.dev" />
+  <meta property="twitter:title" content="Seyi — Developer" />
+  <meta
+    property="twitter:description"
+    content={contentDesc}
+  />
+  <meta
+    property="twitter:image"
+    content="https://res.cloudinary.com/dmwfd0zhh/image/upload/v1625786788/Portfolio/Frame_5_lchlvc.jpg"
+  />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seyi.dev" />
+  <meta property="og:title" content="Seyi — Developer" />
+  <meta
+    property="og:description"
+    content="Front End Developer based in Lagos, Nigeria focused on creating interactive digital experiences on the web."
+  />
+  <meta
+    property="og:image"
+    content="https://res.cloudinary.com/dmwfd0zhh/image/upload/v1625786788/Portfolio/Frame_5_lchlvc.jpg"
+  />
+
+  <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="preload"
+    href="fonts/opensauce-medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+
+  <link rel="stylesheet" href="src/scss/index.css" />
+</head>
