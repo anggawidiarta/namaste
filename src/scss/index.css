@@ -763,7 +763,6 @@ html.has-scroll-dragging {
   margin-bottom: 2.4rem;
 }
 .home__content__desc {
-  max-width: 95rem;
   width: 100%;
 }
 @media (min-width: 769px) {
