@@ -438,8 +438,31 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
         </span>
       </section>
 
-      <section>
-        <AnimatedPinDemo client:load />
+      <section class="flex flex-col md:flex-row">
+        <AnimatedPinDemo
+          title="Test"
+          href="test.com"
+          desc="lorem ipsum"
+          backgroundImageUrl="src/images/pexels-shubham-tekawade-15019065.jpg"
+          client:load
+        />
+
+        <AnimatedPinDemo
+          title="Test"
+          href="test.com"
+          desc="lorem ipsum"
+          backgroundImageUrl="src/images/max-itin-7GeprSfVqLQ-unsplash.jpg"
+          client:load
+        />
+
+        <AnimatedPinDemo
+          title="Test"
+          href="test.com"
+          desc="lorem ipsum"
+          backgroundImageUrl="src/images/nevergg-HO3BhyS4TPw-unsplash.jpg"
+          client:load
+        />
+
         <!-- <div class="home__content__left" style="width:550px;text-align:center">
           <h2 class="home__content__title">COMMUNITY CONTRIBUTIONS</h2>
           <p class="home__content__desc">
