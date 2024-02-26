@@ -3,6 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import HeaderPage from "../components/HeaderPage.astro";
 import Test from "../components/Test.jsx";
+import { TextGenerateEffect } from "../../components/ui/TextGenerateEffect.jsx";
+import { TextGenerateEffectDemo } from "../../components/TextGenerateEffectDemo.jsx";
+import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
 // import '../js/index.js';
 ---
 
@@ -11,8 +14,6 @@ import Test from "../components/Test.jsx";
   <HeaderPage title="Angga - Developer" contentDesc="Front End Developer" />
 
   <body>
-    <!-- <Test /> -->
-
     <main class="home" data-scroll-container>
       <nav class="home__nav">
         <div class="home__nav__left">
@@ -437,11 +438,9 @@ import Test from "../components/Test.jsx";
         </span>
       </section>
 
-      <section
-        class="home__content"
-        style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:5rem"
-      >
-        <div class="home__content__lef" style="width:550px;text-align:center">
+      <section>
+        <AnimatedPinDemo client:load />
+        <!-- <div class="home__content__left" style="width:550px;text-align:center">
           <h2 class="home__content__title">COMMUNITY CONTRIBUTIONS</h2>
           <p class="home__content__desc">
             I have worked on some resources and tools; mostly for designers and
@@ -487,7 +486,7 @@ import Test from "../components/Test.jsx";
               rel="noopener noreferrer">BAVATARS.</a
             >
           </p>
-        </div>
+        </div> -->
       </section>
 
       <section class="home__projects">
@@ -767,8 +766,8 @@ import Test from "../components/Test.jsx";
 
       <section class="home__contact">
         <p class="home__contact__desc">
-          Got a question, proposal or project or want to work together on
-          something? Feel free to reach out.
+          <!-- Got a question, proposal or project or want to work together on
+          something? Feel free to reach out. -->
         </p>
         <div class="line-wrapper">
           <span class="home__projects__line left">
@@ -785,16 +784,15 @@ import Test from "../components/Test.jsx";
               <span aria-hidden="true" class="inner-span">
                 <span
                   class="slide-up"
-                  data-content="LET’S TALK — LET’S COLLABORATE — SAY HELLO — WANNA BE STARTING SOMETHING?"
+                  data-content={"LET'S TALK — LET'S COLLABORATE — SAY HELLO — WANNA BE STARTING SOMETHING?"}
                   aria-hidden="true"></span>
-                LET’S TALK — LET’S COLLABORATE — SAY HELLO — WANNA BE STARTING SOMETHING?</span
+                LET'S TALK — LET'S COLLABORATE — SAY HELLO — WANNA BE STARTING SOMETHING?</span
               >
               <span class="inner-span">
                 <span
                   class="slide-up"
-                  data-content="LET’S TALK — LET’S COLLABORATE — SAY HELLO — WANNA BE STARTING
-                SOMETHING?"
-                  aria-hidden="true"></span> LET’S TALK — LET’S COLLABORATE — SAY
+                  data-content={"LET'S TALK — LET'S COLLABORATE — SAY HELLO — WANNA BE STARTING SOMETHING?"}
+                  aria-hidden="true"></span> LET'S TALK — LET'S COLLABORATE — SAY
                 HELLO — WANNA BE STARTING SOMETHING?</span
               >
             </div>
@@ -808,6 +806,7 @@ import Test from "../components/Test.jsx";
         </div>
 
         <div class="home__contact__email">
+          <!-- <SparklesPreview /> -->
           <button class="email">anggawidiarta55@gmail.com</button>
           <div class="to-copy">
             <span>Click To Copy</span>
@@ -909,5 +908,7 @@ import Test from "../components/Test.jsx";
     </main>
 
     <script type="module" src="/src/js/index.js"></script>
+
+    ../../components/TextGenerateEffectDemo.jsx
   </body>
 </html>
