@@ -1,12 +1,14 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+// import Layout from "../layouts/Layout.astro";
+// import Card from "../components/Card.astro";
+// import Test from "../components/Test.jsx";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 import HeaderPage from "../components/HeaderPage.astro";
-import Test from "../components/Test.jsx";
-import { TextGenerateEffect } from "../../components/ui/TextGenerateEffect.jsx";
-import { TextGenerateEffectDemo } from "../../components/TextGenerateEffectDemo.jsx";
+import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
-// import '../js/index.js';
 ---
 
 <!doctype html>
@@ -108,18 +110,20 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
               </h1>
               <div class="bottom__right">
                 <p class="hero__paragraph">
-                  <span class="first-word">About</span> &nbsp; I am a developer based
-                  in Lagos, Nigeria focused on creating interactive digital experiences
-                  on the web, working with brands and industry leaders such as <span
-                    >Disney,</span
+                  <span class="first-word">About</span>
+                  <span class="capitalize md:hidden">
+                    &nbsp; I am a developer based in Lagos, Nigeria focused on
+                    creating interactive digital experiences on the web, working
+                    with brands and industry leaders such as</span
                   >
-                  <span>Paystack,</span>
-                  <span>Jelly,</span> and
-                  <span>Null</span>
-                  amongst others to achieve this.
+                  <TextGenerateEffect
+                    className="max-md:hidden"
+                    words={"xygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows"}
+                    client:load
+                  />
                 </p>
                 <div class="hero__scroll">
-                  <p>Scroll down</p>
+                  <p class="capitalize">Scroll Down</p>
                   <div class="c-infinite">
                     <span class="c-link">
                       <span class="c-link__inner">
@@ -444,7 +448,7 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
           href="test.com"
           desc="lorem ipsum"
           backgroundImageUrl="src/images/pexels-shubham-tekawade-15019065.jpg"
-          client:load
+          client:visible
         />
 
         <AnimatedPinDemo
@@ -452,7 +456,7 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
           href="test.com"
           desc="lorem ipsum"
           backgroundImageUrl="src/images/max-itin-7GeprSfVqLQ-unsplash.jpg"
-          client:load
+          client:visible
         />
 
         <AnimatedPinDemo
@@ -460,7 +464,7 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
           href="test.com"
           desc="lorem ipsum"
           backgroundImageUrl="src/images/nevergg-HO3BhyS4TPw-unsplash.jpg"
-          client:load
+          client:visible
         />
 
         <!-- <div class="home__content__left" style="width:550px;text-align:center">
@@ -829,7 +833,7 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
         </div>
 
         <div class="home__contact__email">
-          <!-- <SparklesPreview /> -->
+          <!-- <TextGenerateEffect words="loremsdasdasd test asdasdddd asdasd" client:visible /> -->
           <button class="email">anggawidiarta55@gmail.com</button>
           <div class="to-copy">
             <span>Click To Copy</span>
@@ -918,20 +922,18 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
           </div>
         </div>
         <p class="home__footer__right">
-          Design by
+          Created by
           <a
             href="https://fayemi.design/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Isaac Fayemi
+            Angga Widiarta
           </a>
         </p>
       </footer>
     </main>
 
     <script type="module" src="/src/js/index.js"></script>
-
-    ../../components/TextGenerateEffectDemo.jsx
   </body>
 </html>
