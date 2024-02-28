@@ -3,9 +3,6 @@
 // import Card from "../components/Card.astro";
 // import Test from "../components/Test.jsx";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
 import HeaderPage from "../components/HeaderPage.astro";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
@@ -442,7 +439,7 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
         </span>
       </section>
 
-      <section class="flex flex-col md:flex-row">
+      <section class="flex flex-col md:flex-row" data-aos="fade-up">
         <AnimatedPinDemo
           title="Test"
           href="test.com"
