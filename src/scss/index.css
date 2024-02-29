@@ -362,7 +362,7 @@ html.has-scroll-dragging {
   }
 }
 .home__projects__project__link.gradient .title__main {
-  background: linear-gradient(90deg, rgba(233, 227, 198, 0.5) 0%, rgba(233, 198, 217, 0.5) 100%);
+  background: #777777;
   background-size: 200% 100%;
   animation: textGradientAnim 5s ease infinite alternate;
   overflow: hidden;
