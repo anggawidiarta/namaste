@@ -199,3 +199,4 @@ export default class Home {
 }
 
 new Home(scroll);
+console.log('testtttttt 123')
