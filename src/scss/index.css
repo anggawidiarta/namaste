@@ -323,12 +323,12 @@ html.has-scroll-dragging {
   }
 }
 .home__projects__project .project__link .c-button .c-link__inner > span {
-  margin-top: -4px;
+  margin-top: 0;
   display: block;
 }
 .home__projects__project .project__link .share-icon {
   position: relative;
-  top: 0.3rem;
+  top: 0;
 }
 .home__projects__project__label {
   line-height: 1.3;
