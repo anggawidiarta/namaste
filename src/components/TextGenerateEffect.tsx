@@ -1,9 +1,14 @@
-"use client";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import React from "react";
 
-const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
+interface TextGenerateEffectDemoProps {
+  words: string;
+  className?: string;
+}
 
-export function TextGenerateEffectDemo() {
-  return <TextGenerateEffect words={words} />;
+export function TextGenerateEffectDemo({
+  words,
+  className,
+}: TextGenerateEffectDemoProps) {
+  return <TextGenerateEffect words={words} className={className} />;
 }

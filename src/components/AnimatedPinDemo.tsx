@@ -9,6 +9,7 @@ import { PinContainer } from "./ui/3d-pin";
  */
 interface AnimatedPinDemoProps {
   title: string; // The title of the pin
+  headTitle: string; // The title of the pin
   desc: string; // The description of the pin
   href: string; // The URL the pin should navigate to
   backgroundImageUrl: string; // The URL for the background image
@@ -22,6 +23,7 @@ interface AnimatedPinDemoProps {
  * @param backgroundImageUrl - The URL for the background image
  */
 export function AnimatedPinDemo({
+  headTitle,
   title,
   desc,
   href,
@@ -29,7 +31,7 @@ export function AnimatedPinDemo({
 }: AnimatedPinDemoProps) {
   return (
     <div className="h-[40rem] w-full flex items-center justify-center ">
-      <PinContainer title={title} href={href}>
+      <PinContainer title={headTitle} href={href}>
         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[24rem] h-[30rem] ">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base lg:text-xl text-slate-100 w-max">
             {title}

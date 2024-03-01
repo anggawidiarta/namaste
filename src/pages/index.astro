@@ -1,73 +1,13 @@
 ---
-// import Layout from "../layouts/Layout.astro";
-// import Card from "../components/Card.astro";
-// import Test from "../components/Test.jsx";
-
 import HeaderPage from "../components/HeaderPage.astro";
-import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+// import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
-const title = "Test Page";
-const contentDesc = "Lorem Ipsum";
-import "../scss/index.css";
+import { TextGenerateEffectDemo } from "../components/TextGenerateEffect";
 ---
 
 <!doctype html>
 <html lang="en">
-  <!-- <HeaderPage title="Angga - Developer" contentDesc="Front End Developer" client:load /> -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
-    <meta name="title" content={title} />
-    <link rel="icon" href="/favicon.svg" />
-    <meta name="description" content={contentDesc} />
-    <meta
-      property="og:image"
-      content="https://res.cloudinary.com/dmwfd0zhh/image/upload/v1625786788/Portfolio/Frame_5_lchlvc.jpg"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://seyi.dev" />
-    <meta property="twitter:title" content="Seyi — Developer" />
-    <meta property="twitter:description" content={contentDesc} />
-    <meta
-      property="twitter:image"
-      content="https://res.cloudinary.com/dmwfd0zhh/image/upload/v1625786788/Portfolio/Frame_5_lchlvc.jpg"
-    />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://seyi.dev" />
-    <meta property="og:title" content="Seyi — Developer" />
-    <meta
-      property="og:description"
-      content="Front End Developer based in Lagos, Nigeria focused on creating interactive digital experiences on the web."
-    />
-    <meta
-      property="og:image"
-      content="https://res.cloudinary.com/dmwfd0zhh/image/upload/v1625786788/Portfolio/Frame_5_lchlvc.jpg"
-    />
-
-    <script type="text/javascript" src="//w.24timezones.com/l.js" async
-    ></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="preload"
-      href="/src/fonts/opensauce-medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <!-- <link rel="stylesheet" href="/src/scss/index.css" /> -->
-  </head>
+  <HeaderPage title="Angga - Developer" contentDesc="Front End Developer" />
 
   <body>
     <main class="home" data-scroll-container>
@@ -183,9 +123,9 @@ import "../scss/index.css";
                     creating interactive digital experiences on the web, working
                     with brands and industry leaders such as</span
                   >
-                  <TextGenerateEffect
+                  <TextGenerateEffectDemo
                     className="max-md:hidden"
-                    words={"xygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows"}
+                    words={"Hello, I'm Angga. A computer science graduate with a high commitment to learning and developing new things within and beyond the realm of technology. Actively involved in various organizational activities that have honed leadership skills, adaptability, and the ability to work under pressure."}
                     client:load
                   />
                 </p>
@@ -269,7 +209,7 @@ import "../scss/index.css";
           </a>
 
           <div class="project__link">
-            <a
+            <alo
               href="https://www.unveil.art/"
               target="_blank"
               rel="noopener noreferrer"
@@ -277,11 +217,11 @@ import "../scss/index.css";
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span> VIEW SITE</span>
-                  <span class="c-link__animated"> Go</span>
+                  <span>VIEW SITE</span>
+                  <span class="c-link__animated">VIEW SITE</span>
                 </span>
               </span>
-            </a>
+            </alo>
           </div>
         </div>
 
@@ -331,21 +271,8 @@ import "../scss/index.css";
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"></path></svg
-                      ></span
-                    >
-                  </span>
+                  <span>VIEW SITE</span>
+                  <span class="c-link__animated">VIEW SITE</span>
                 </span>
               </span>
             </a>
@@ -398,21 +325,8 @@ import "../scss/index.css";
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"></path></svg
-                      ></span
-                    >
-                  </span>
+                  <span>VIEW SITE</span>
+                  <span class="c-link__animated">VIEW SITE</span>
                 </span>
               </span>
             </a>
@@ -466,21 +380,8 @@ import "../scss/index.css";
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"></path></svg
-                      ></span
-                    >
-                  </span>
+                  <span>VIEW SITE</span>
+                  <span class="c-link__animated">VIEW SITE</span>
                 </span>
               </span>
             </a>
@@ -492,8 +393,9 @@ import "../scss/index.css";
         </span>
       </section>
 
-      <section class="flex flex-col md:flex-row" data-aos="fade-up">
+      <section class="flex flex-col md:flex-row" data-fade-in>
         <AnimatedPinDemo
+          headTitle="123"
           title="Test"
           href="test.com"
           desc="lorem ipsum"
@@ -502,6 +404,7 @@ import "../scss/index.css";
         />
 
         <AnimatedPinDemo
+          headTitle="123"
           title="Test"
           href="test.com"
           desc="lorem ipsum"
@@ -510,60 +413,13 @@ import "../scss/index.css";
         />
 
         <AnimatedPinDemo
+          headTitle="123"
           title="Test"
           href="test.com"
           desc="lorem ipsum"
           backgroundImageUrl="/nevergg-HO3BhyS4TPw-unsplash.webp"
           client:visible
         />
-
-        <!-- <div class="home__content__left" style="width:550px;text-align:center">
-          <h2 class="home__content__title">COMMUNITY CONTRIBUTIONS</h2>
-          <p class="home__content__desc">
-            I have worked on some resources and tools; mostly for designers and
-            developers like myself, you should checkout
-            <a
-              href="https://www.figma.com/community/plugin/943569346291474506/Tints-and-Shades"
-              target="_blank"
-              rel="noopener noreferrer">TINTS AND SHADES</a
-            >,
-            <a
-              href="https://www.figma.com/community/plugin/949697027067571105/Nigerian-Logos"
-              target="_blank"
-              rel="noopener noreferrer">NIGERIAN LOGOS</a
-            >
-            and
-            <a
-              href="https://www.figma.com/community/plugin/999661511334406897/Bavatars"
-              target="_blank"
-              rel="noopener noreferrer">BAVATARS.</a
-            >
-          </p>
-        </div>
-
-        <div class="home__content__right" style="width:550px;text-align:center">
-          <h2 class="home__content__title">COMMUNITY CONTRIBUTIONS</h2>
-          <p class="home__content__desc">
-            I have worked on some resources and tools; mostly for designers and
-            developers like myself, you should checkout
-            <a
-              href="https://www.figma.com/community/plugin/943569346291474506/Tints-and-Shades"
-              target="_blank"
-              rel="noopener noreferrer">TINTS AND SHADES</a
-            >,
-            <a
-              href="https://www.figma.com/community/plugin/949697027067571105/Nigerian-Logos"
-              target="_blank"
-              rel="noopener noreferrer">NIGERIAN LOGOS</a
-            >
-            and
-            <a
-              href="https://www.figma.com/community/plugin/999661511334406897/Bavatars"
-              target="_blank"
-              rel="noopener noreferrer">BAVATARS.</a
-            >
-          </p>
-        </div> -->
       </section>
 
       <section class="home__projects">
@@ -613,23 +469,8 @@ import "../scss/index.css";
               class="c-button"
             >
               <span class="c-link">
-                <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"></path></svg
-                      ></span
-                    >
-                  </span>
-                </span>
+                <span>VIEW SITE</span>
+                <span class="c-link__animated">VIEW SITE</span>
               </span>
             </a>
           </div>
@@ -682,21 +523,8 @@ import "../scss/index.css";
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"></path></svg
-                      ></span
-                    >
-                  </span>
+                  <span>VIEW SITE</span>
+                  <span class="c-link__animated">VIEW SITE</span>
                 </span>
               </span>
             </a>
@@ -749,21 +577,8 @@ import "../scss/index.css";
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"></path></svg
-                      ></span
-                    >
-                  </span>
+                  <span>VIEW SITE</span>
+                  <span class="c-link__animated">VIEW SITE</span>
                 </span>
               </span>
             </a>
@@ -817,21 +632,8 @@ import "../scss/index.css";
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"></path></svg
-                      ></span
-                    >
-                  </span>
+                  <span>VIEW SITE</span>
+                  <span class="c-link__animated">VIEW SITE</span>
                 </span>
               </span>
             </a>
@@ -846,34 +648,57 @@ import "../scss/index.css";
       <section class="home__awards">
         <div class="home__awards__left">
           <h2 class="awards__title">
-            <span>AWARDS X</span><br />
-            <span>RECOGNITION</span>
+            <span>WORK / ORGANIZATION</span><br />
+            <span>EXPERIENCE</span>
           </h2>
           <div class="home__awards__table">
             <div class="awards__item" data-fade-in>
-              Awwwards ⏤ Site of the Day (x2)
+              Jalan Digital ⏤ Freelance Web Developer
             </div>
             <div class="awards__item" data-fade-in>
-              Awwwards ⏤ Developer Award (x2)
+              Immigration Office Mataram ⏤ Web Developer
             </div>
             <div class="awards__item" data-fade-in>
-              Awwwards ⏤ Jury Member 2023
+              University Of Mataram ⏤ Assistant Lecturer For Databases System
+              Course
             </div>
             <div class="awards__item" data-fade-in>
-              Designnominees ⏤ Site of the Day
+              Organization ⏤ Association Of Informatics Engineering Students
             </div>
-
             <div class="awards__item" data-fade-in>
-              2022 Figma Community Award ⏤ Nominee
+              Organization ⏤ Family Of Hindu Dharma Engineering Students
             </div>
-            <div class="awards__item" data-fade-in>Maxibestof</div>
-            <div class="awards__item" data-fade-in>Thegallery.io (x2)</div>
-            <div class="awards__item" data-fade-in>Klikkentheke ⏤ No 2326</div>
-            <div class="awards__item" data-fade-in>Klikkentheke ⏤ No 2492</div>
+          </div>
+          <br />
+          <h2 class="awards__title">
+            <span>CERTIFICATIONS</span><br />
+            <span>LIST</span>
+          </h2>
+          <div class="home__awards__table">
             <div class="awards__item" data-fade-in>
-              The Ultra Index® ⏤ For storytelling experience
+              Solid Programming Principles <a href="#" target="_blank">➣</a>
+            </div><div class="awards__item" data-fade-in>
+              Specialized Google Analytics Data <a href="#" target="_blank">➣</a
+              >
             </div>
-            <div class="awards__item" data-fade-in>MUZLI</div>
+            <div class="awards__item" data-fade-in>
+              AI-900: Microsoft Azure AI Fundamentals <a
+                href="#"
+                target="_blank">➣</a
+              >
+            </div>
+            <div class="awards__item" data-fade-in>
+              DP-900: Microsoft Azure Data Fundamentals <a
+                href="#"
+                target="_blank">➣</a
+              >
+            </div>
+            <div class="awards__item" data-fade-in>
+              PL-900: Microsoft Power Platform Fundamentals <a
+                href="#"
+                target="_blank">➣</a
+              >
+            </div>
           </div>
         </div>
 
@@ -881,10 +706,10 @@ import "../scss/index.css";
           <div class="home__awards__stack" data-fade-in>
             <h2 class="home__content__title">Interests</h2>
             <p class="home__content__desc">
-              Art Direction, Brand Strategy, Creative Development, E-Commerce,
-              Webflow, 3D/Augmented Reality, Web3 <br />
+              UI/UX, Web Development, Computer Hardware, Content Creation,
+              Machine Learning, Artificial Intelligence, NLP. <br />
               <a
-                href="https://github.com/oluwadareseyi"
+                href="https://github.com/anggawidiarta"
                 target="_blank"
                 rel="noopener noreferrer">See my Github</a
               >
@@ -951,7 +776,6 @@ import "../scss/index.css";
         </div>
 
         <div class="home__contact__email">
-          <!-- <TextGenerateEffect words="loremsdasdasd test asdasdddd asdasd" client:visible /> -->
           <button class="email">anggawidiarta55@gmail.com</button>
           <div class="to-copy">
             <span>Click To Copy</span>
