@@ -9,7 +9,15 @@ const footer = document.getElementById("js-footer");
 const scrollEl = document.querySelector("[data-scroll-container]");
 const emailButton = document.querySelector("button.email");
 const toCopyText = document.querySelector(".to-copy span");
-// const body = document.body;
+
+// Wait for the page to fully load
+window.addEventListener("load", function () {
+  // Hide the loading animation
+  document.querySelector(".wrapper").style.display = "none";
+
+  // Show the content
+  document.querySelector(".home").style.display = "block";
+});
 
 gsap.registerPlugin(ScrollTrigger);
 

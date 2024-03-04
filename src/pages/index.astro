@@ -1,8 +1,9 @@
 ---
 import HeaderPage from "../components/HeaderPage.astro";
-// import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
 import { TextGenerateEffectDemo } from "../components/TextGenerateEffect";
+
+// import "../scss/loading.css";
 ---
 
 <!doctype html>
@@ -10,6 +11,29 @@ import { TextGenerateEffectDemo } from "../components/TextGenerateEffect";
   <HeaderPage title="Angga - Developer" contentDesc="Front End Developer" />
 
   <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+
     <main class="home" data-scroll-container>
       <nav class="home__nav">
         <div class="home__nav__left">
@@ -209,7 +233,7 @@ import { TextGenerateEffectDemo } from "../components/TextGenerateEffect";
           </a>
 
           <div class="project__link">
-            <alo
+            <a
               href="https://www.unveil.art/"
               target="_blank"
               rel="noopener noreferrer"
@@ -221,7 +245,7 @@ import { TextGenerateEffectDemo } from "../components/TextGenerateEffect";
                   <span class="c-link__animated">VIEW SITE</span>
                 </span>
               </span>
-            </alo>
+            </a>
           </div>
         </div>
 
