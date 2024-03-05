@@ -23,7 +23,7 @@ import "../scss/index.css";
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://seyi.dev" />
-  <meta property="twitter:title" content="Seyi — Developer" />
+  <meta property="twitter:title" content={title} />
   <meta property="twitter:description" content={contentDesc} />
   <meta
     property="twitter:image"
@@ -33,11 +33,8 @@ import "../scss/index.css";
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://seyi.dev" />
-  <meta property="og:title" content="Seyi — Developer" />
-  <meta
-    property="og:description"
-    content="Front End Developer based in Lagos, Nigeria focused on creating interactive digital experiences on the web."
-  />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={contentDesc} />
   <meta
     property="og:image"
     content="https://res.cloudinary.com/dmwfd0zhh/image/upload/v1625786788/Portfolio/Frame_5_lchlvc.jpg"
@@ -72,7 +69,7 @@ import "../scss/index.css";
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"

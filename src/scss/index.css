@@ -1045,6 +1045,9 @@ html.has-scroll-dragging {
 .home__contact__desc {
   margin: 0;
   margin-bottom: 6.4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  font-style: italic;
 }
 @media (min-width: 551px) {
   .home__contact__desc {

@@ -484,6 +484,9 @@
       @extend %padding-home;
       margin: 0;
       margin-bottom: 6.4rem;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      text-transform: capitalize;
+      font-style: italic;
 
       @include media(">phone") {
         max-width: 44rem;
