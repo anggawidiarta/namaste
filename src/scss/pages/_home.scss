@@ -387,7 +387,7 @@
         transition: color 0.2s;
 
         // &::after {
-          // background: $col-yellow;
+        // background: $col-yellow;
         //   content: "";
         //   display: block;
         //   height: 100%;
@@ -674,6 +674,12 @@
       .place {
         color: $col-boulder;
         margin-right: 1.4rem;
+        transition: 0.5s ease;
+        cursor: pointer;
+        &:hover {
+          transition: 0.5s ease;
+          color: #f6c90e;
+        }
       }
 
       .time {
