@@ -2,6 +2,10 @@
   "name": "astro-portfolio-migration",
   "type": "module",
   "version": "1.0.0",
+  "author": {
+    "name": "Angga Widiarta",
+    "url": "https://github.com/anggawidiarta"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
