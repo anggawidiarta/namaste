@@ -10,7 +10,25 @@ const scrollEl = document.querySelector("[data-scroll-container]");
 const emailButton = document.querySelector("button.email");
 const toCopyText = document.querySelector(".to-copy span");
 
-// Ensure the content is loaded before executing any code
+/*
+The DOMContentLoaded event is fired when the initial HTML document
+has been completely loaded and parsed, without waiting for stylesheets,
+images, and subframes to finish loading. It is a good practice to
+handle this event as early as possible, since it indicates that
+the document is ready to be manipulated.
+
+We are attaching an event listener to this event, which is fired
+when the entire page has been loaded. When the event is fired,
+we execute the function which has been passed as the event listener.
+
+Inside this function, we first hide the loading animation by selecting
+the element with the class "wrapper" and setting its "display"
+property to "none". This effectively hides the loading animation.
+
+After that, we show the content of the page by selecting the element
+with the class "home" and setting its "display" property to "block".
+This effectively shows the content of the page.
+*/
 document.addEventListener("DOMContentLoaded", function () {
   // Hide the loading animation
   document.querySelector(".wrapper").style.display = "none";
