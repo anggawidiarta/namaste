@@ -10,8 +10,8 @@ const scrollEl = document.querySelector("[data-scroll-container]");
 const emailButton = document.querySelector("button.email");
 const toCopyText = document.querySelector(".to-copy span");
 
-// Wait for the page to fully load
-window.addEventListener("load", function () {
+// Ensure the content is loaded before executing any code
+document.addEventListener("DOMContentLoaded", function () {
   // Hide the loading animation
   document.querySelector(".wrapper").style.display = "none";
 
