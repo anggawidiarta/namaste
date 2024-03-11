@@ -1,3 +1,4 @@
+import 'animate.css'
 import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,34 +11,17 @@ const scrollEl = document.querySelector("[data-scroll-container]");
 const emailButton = document.querySelector("button.email");
 const toCopyText = document.querySelector(".to-copy span");
 
-/*
-The DOMContentLoaded event is fired when the initial HTML document
-has been completely loaded and parsed, without waiting for stylesheets,
-images, and subframes to finish loading. It is a good practice to
-handle this event as early as possible, since it indicates that
-the document is ready to be manipulated.
-
-We are attaching an event listener to this event, which is fired
-when the entire page has been loaded. When the event is fired,
-we execute the function which has been passed as the event listener.
-
-Inside this function, we first hide the loading animation by selecting
-the element with the class "wrapper" and setting its "display"
-property to "none". This effectively hides the loading animation.
-
-After that, we show the content of the page by selecting the element
-with the class "home" and setting its "display" property to "block".
-This effectively shows the content of the page.
-*/
-
+// This event listener waits until the entire HTML document has been loaded
 document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => {
-    // Hide the loading animation
+  // After a 2-second delay (2000 milliseconds), it performs the following actions:
+  setTimeout(function () {
+    // It finds the element with the class "wrapper" and hides it by changing the "display" CSS property to "none"
     document.querySelector(".wrapper").style.display = "none";
 
-    // Show the content
+    // It finds the element with the class "home" and shows it by changing the "display" CSS property to "block"
+    // (Previously, it attempted to add the class "fadeInHome", but it was commented out)
     document.querySelector(".home").style.display = "block";
-    // document.querySelector(".home").classList.add("fadeInHome");
+    document.querySelector('.home').classList.add('animate__animated', 'animate__fadeIn');
   }, 2000);
 });
 

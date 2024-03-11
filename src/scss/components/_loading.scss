@@ -1,6 +1,6 @@
 :root {
   --b: #111111;
-  --w: #777777;
+  --w: #f6c90e;
   --s: 2s; /* change speed */
 }
 
@@ -150,9 +150,12 @@
 .home {
   display: hidden;
   scrollbar-width: none;
-
 }
-.fadeInHome{
+.fadeInHome {
   transition: ease-in 5s;
   opacity: 1;
+}
+.animate__animated.animate__fadeIn {
+  --animate-delay: 2s;
+  --animate-duration: 2.5s;
 }

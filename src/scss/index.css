@@ -533,7 +533,7 @@ html.has-scroll-dragging {
 
 :root {
   --b: #111111;
-  --w: #777777;
+  --w: #f6c90e;
   --s: 2s; /* change speed */
 }
 
@@ -681,6 +681,11 @@ html.has-scroll-dragging {
 .fadeInHome {
   transition: ease-in 5s;
   opacity: 1;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-delay: 2s;
+  --animate-duration: 2.5s;
 }
 
 .home__contact__desc, .home__contact .line-wrapper, .home__awards, .home__content, .home__projects, .home__hero, .home__nav {
