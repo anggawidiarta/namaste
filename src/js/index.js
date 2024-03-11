@@ -29,12 +29,16 @@ After that, we show the content of the page by selecting the element
 with the class "home" and setting its "display" property to "block".
 This effectively shows the content of the page.
 */
-document.addEventListener("DOMContentLoaded", function () {
-  // Hide the loading animation
-  document.querySelector(".wrapper").style.display = "none";
 
-  // Show the content
-  document.querySelector(".home").style.display = "block";
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    // Hide the loading animation
+    document.querySelector(".wrapper").style.display = "none";
+
+    // Show the content
+    document.querySelector(".home").style.display = "block";
+    // document.querySelector(".home").classList.add("fadeInHome");
+  }, 2000);
 });
 
 gsap.registerPlugin(ScrollTrigger);
