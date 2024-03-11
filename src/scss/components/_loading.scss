@@ -12,17 +12,21 @@
 }
 
 .wrapper {
+  scrollbar-width: none;
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   display: flex;
+  position: absolute;
+  z-index: 9999;
   align-items: center;
   justify-content: center;
   background: var(--b);
 }
 .content {
+  overflow: hidden;
   width: 50vmin;
   height: 50vmin;
   text-align: center;
@@ -144,5 +148,11 @@
 }
 
 .home {
-  display: none;
+  display: hidden;
+  scrollbar-width: none;
+
+}
+.fadeInHome{
+  transition: ease-in 5s;
+  opacity: 1;
 }
