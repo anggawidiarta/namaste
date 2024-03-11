@@ -1,4 +1,5 @@
 html {
+  scrollbar-width: none;
   font-size: calc(100vw / 1440 * 10);
   overscroll-behavior: none;
   -moz-osx-font-smoothing: grayscale;
@@ -21,6 +22,7 @@ body {
   font-size: 1.6rem;
   background: $col-black;
   color: $col-gray;
+  scrollbar-width: none;
 }
 
 // Locomotive

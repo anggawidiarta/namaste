@@ -155,6 +155,7 @@ a {
   font-display: swap;
 }
 html {
+  scrollbar-width: none;
   font-size: 0.6944444444vw;
   overscroll-behavior: none;
   -moz-osx-font-smoothing: grayscale;
@@ -178,6 +179,7 @@ body {
   font-size: 1.6rem;
   background: #111111;
   color: #aaaaaa;
+  scrollbar-width: none;
 }
 
 html.has-scroll-smooth {
@@ -543,18 +545,22 @@ html.has-scroll-dragging {
 }
 
 .wrapper {
+  scrollbar-width: none;
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   display: flex;
+  position: absolute;
+  z-index: 9999;
   align-items: center;
   justify-content: center;
   background: var(--b);
 }
 
 .content {
+  overflow: hidden;
   width: 50vmin;
   height: 50vmin;
   text-align: center;
@@ -668,7 +674,13 @@ html.has-scroll-dragging {
 }
 
 .home {
-  display: none;
+  display: hidden;
+  scrollbar-width: none;
+}
+
+.fadeInHome {
+  transition: ease-in 5s;
+  opacity: 1;
 }
 
 .home__contact__desc, .home__contact .line-wrapper, .home__awards, .home__content, .home__projects, .home__hero, .home__nav {
