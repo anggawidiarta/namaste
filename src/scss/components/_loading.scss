@@ -11,6 +11,11 @@
   transform-style: preserve-3d;
 }
 
+.bodyNotOverflow {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .wrapper {
   scrollbar-width: none;
   margin: 0;
@@ -148,7 +153,7 @@
 }
 
 .home {
-  display: hidden;
+  // visibility: hidden;
   scrollbar-width: none;
 }
 .fadeInHome {

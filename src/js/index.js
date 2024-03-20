@@ -1,4 +1,4 @@
-import 'animate.css'
+import "animate.css";
 import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,17 +11,15 @@ const scrollEl = document.querySelector("[data-scroll-container]");
 const emailButton = document.querySelector("button.email");
 const toCopyText = document.querySelector(".to-copy span");
 
-// This event listener waits until the entire HTML document has been loaded
-document.addEventListener("DOMContentLoaded", function () {
-  // After a 2-second delay (2000 milliseconds), it performs the following actions:
-  setTimeout(function () {
-    // It finds the element with the class "wrapper" and hides it by changing the "display" CSS property to "none"
-    document.querySelector(".wrapper").style.display = "none";
-
-    // It finds the element with the class "home" and shows it by changing the "display" CSS property to "block"
-    // (Previously, it attempted to add the class "fadeInHome", but it was commented out)
-    document.querySelector(".home").style.display = "block";
-    document.querySelector('.home').classList.add('animate__animated', 'animate__fadeIn');
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const wrapper = document.querySelector(".wrapper");
+    const home = document.querySelector(".home");
+    const body = document.body;
+    wrapper.style.display = "none";
+    body.classList.remove("bodyNotOverflow");
+    home.style.display = "block";
+    home.classList.add("animate__animated", "animate__fadeIn");
   }, 2000);
 });
 
