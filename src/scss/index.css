@@ -1229,6 +1229,8 @@ html.has-scroll-dragging {
 .home__footer__left {
   display: flex;
   font-family: "Open Sauce", arial;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 @media (min-width: 769px) {
   .home__footer__left {

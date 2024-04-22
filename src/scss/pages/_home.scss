@@ -206,7 +206,6 @@
 
         span {
           text-transform: uppercase;
-          
         }
 
         .first-word {
@@ -668,6 +667,7 @@
     &__left {
       display: flex;
       font-family: $font-sauce;
+      max-width: fit-content;
       @include media(">tablet") {
         left: 2.4rem;
         position: absolute;
