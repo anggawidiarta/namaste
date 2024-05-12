@@ -1304,6 +1304,8 @@ html.has-scroll-dragging {
 }
 .home__footer__center .footer__links .link__flex__inner {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.8rem;
 }
 @media (max-width: 768px) {
   .home__footer__center .footer__links .link__flex__inner .c-button:first-of-type {

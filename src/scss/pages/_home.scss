@@ -741,6 +741,9 @@
 
           &__inner {
             display: flex;
+            flex-wrap: wrap;
+            row-gap: 0.8rem;
+            // column-gap: 0.8rem;
             .c-button {
               @include media("<=tablet") {
                 &:first-of-type {
