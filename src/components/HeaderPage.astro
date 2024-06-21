@@ -8,8 +8,23 @@ const { title, contentDesc } = Astro.props;
 import "../scss/index.css";
 ---
 
-<head
-  ><meta charset="UTF-8" />
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    type="text/partytown"
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-B4PD2PNELH"></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-B4PD2PNELH");
+  </script>
+
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
   <meta name="title" content={title} />
@@ -87,20 +102,4 @@ import "../scss/index.css";
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-
-  <script
-    is:inline
-    type="text/javascript"
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-B4PD2PNELH"></script>
-
-  <script is:inline type="text/javascript">
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-B4PD2PNELH");
-  </script>
 </head>
