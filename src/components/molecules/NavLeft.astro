@@ -1,0 +1,21 @@
+---
+import NavText from "../atoms/NavText.astro";
+
+const currentYear = new Date().getFullYear();
+---
+
+<div class="home__nav__left">
+  <NavText>
+    <span>
+      I Putu Angga <br />
+      Purnama Widiarta
+    </span>
+  </NavText>
+
+  <NavText className="nav__folio hide-mobile">
+    <span>
+      Web Developer <br />
+      Portfolio / {currentYear}
+    </span>
+  </NavText>
+</div>

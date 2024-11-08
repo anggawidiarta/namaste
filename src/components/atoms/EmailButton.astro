@@ -1,0 +1,25 @@
+---
+import type { EmailButtonProps } from "../../types/contact";
+
+interface Props extends EmailButtonProps {}
+
+const { email } = Astro.props;
+---
+
+<div class="home__contact__email">
+  <button class="email">{email}</button>
+  <div class="to-copy">
+    <span class="capitalize">Click To Copy</span>
+  </div>
+</div>
+
+<script>
+  const emailButton = document.querySelector("button.email");
+  emailButton?.addEventListener("click", async () => {
+    const email = emailButton.textContent;
+    if (email) {
+      await navigator.clipboard.writeText(email);
+      alert("Copied to clipboard");
+    }
+  });
+</script>

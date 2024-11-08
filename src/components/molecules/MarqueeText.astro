@@ -1,0 +1,23 @@
+---
+import type { MarqueeProps } from "../../types/contact";
+
+interface Props extends MarqueeProps {}
+
+const { text, emailLink } = Astro.props;
+---
+
+<!-- src/components/molecules/MarqueeText.astro -->
+<div class="marquee">
+  <a href={emailLink} class="marquee__wrap" target="_blank">
+    <div class="marquee__inner">
+      <span aria-hidden="true" class="inner-span">
+        <span class="slide-up" data-content={text} aria-hidden="true"></span>
+        {text}</span
+      >
+      <span class="inner-span">
+        <span class="slide-up" data-content={text} aria-hidden="true"></span>
+        {text}</span
+      >
+    </div>
+  </a>
+</div>

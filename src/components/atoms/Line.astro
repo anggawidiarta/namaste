@@ -1,0 +1,13 @@
+---
+import type { LineProps } from "../../types/contact";
+
+interface Props extends LineProps {}
+
+const { position } = Astro.props;
+---
+
+<div class="line-wrapper">
+  <span class={`home__projects__line ${position}`}>
+    <span></span>
+  </span>
+</div>

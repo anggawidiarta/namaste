@@ -1,0 +1,28 @@
+---
+import NavButton from "../atoms/NavButton.astro";
+import NavText from "../atoms/NavText.astro";
+---
+
+<div class="home__nav__right">
+  <NavText className="nav__folio hide-desktop">
+    <span>
+      Frontend Developer <br />
+      Personal Portfolio / 2024
+    </span>
+  </NavText>
+
+  <NavText className="nav__availability">
+    <span>
+      Available for freelance <br />
+      Work / ASAP
+    </span>
+  </NavText>
+
+  <a href="https://nuxt-personal-blog-seven.vercel.app/" target="_blank">
+    <NavButton text="Blog" />
+  </a>
+
+  <div class="max-[550px]:mx-0 max-[550px]:my-4">
+    <NavButton text="Contact" className="contact-scroll" />
+  </div>
+</div>
