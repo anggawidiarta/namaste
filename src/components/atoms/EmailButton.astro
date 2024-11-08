@@ -14,12 +14,55 @@ const { email } = Astro.props;
 </div>
 
 <script>
+  import { playClickSound } from "../../js/utils/sound";
+
   const emailButton = document.querySelector("button.email");
   emailButton?.addEventListener("click", async () => {
     const email = emailButton.textContent;
     if (email) {
-      await navigator.clipboard.writeText(email);
-      alert("Copied to clipboard");
+      try {
+        await navigator.clipboard.writeText(email);
+
+        playClickSound();
+      } catch (err) {
+        console.error("Failed to copy:", err);
+        alert("Failed to copy email");
+      }
     }
   });
 </script>
+
+<style>
+  .copy-tooltip {
+    position: absolute;
+    background: #f6c90e;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 14px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeInOut 2s ease-in-out;
+    pointer-events: none;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 10px);
+    }
+    15% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    85% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -10px);
+    }
+  }
+</style>
