@@ -1,0 +1,17 @@
+---
+interface Props {
+  category: string;
+  technology: string;
+}
+
+const { category, technology } = Astro.props;
+---
+
+<div class="home__projects__project__label">
+  <div class="label__inner">
+    <p>
+      {category} / <br />
+      {technology}
+    </p>
+  </div>
+</div>

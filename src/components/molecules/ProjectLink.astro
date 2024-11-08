@@ -1,0 +1,18 @@
+---
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<div class="project__link">
+  <a href={href} target="_blank" rel="noopener noreferrer" class="c-button">
+    <span class="c-link">
+      <span class="c-link__inner">
+        <span>VIEW SITE</span>
+        <span class="c-link__animated">VIEW SITE</span>
+      </span>
+    </span>
+  </a>
+</div>

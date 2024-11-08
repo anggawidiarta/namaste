@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string;
+  direction: "left" | "right";
+  speed: number;
+}
+
+const { title, direction, speed } = Astro.props;
+---
+
+<h1
+  class="home__projects__project__title"
+  data-scroll=""
+  data-scroll-direction="horizontal"
+  data-scroll-speed={speed}
+>
+  <span class="inline-ovh">
+    <div class={`title__main ${direction}`}>
+      <span class="slide-up" data-content={title} aria-hidden="true"></span>
+      {title}
+    </div>
+  </span>
+</h1>

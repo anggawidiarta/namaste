@@ -1,0 +1,86 @@
+---
+import ProjectLine from "../atoms/ProjectLine.astro";
+import ProjectCard from "../organisms/ProjectCard.astro";
+
+const projects = [
+  {
+    category: "WEB DEVELOPMENT",
+    technology: "NEXT.JS & LARAVEL",
+    title:
+      "INSIDE UMKM - WEB PLATFORM FOR MICRO, SMALL, AND MEDIUM ENTERPRISES",
+    href: "https://umkm.insidelombok.com/",
+    direction: "left",
+    speed: -8,
+  },
+  {
+    category: "WEB DEVELOPMENT",
+    technology: "CODEIGNITER",
+    title: "ABSENCE APPLICATION - WEB BASED EMPLOYEE ABSENCE APPLICATION",
+    href: "https://absen.oxindosolution.com/",
+    direction: "right",
+    speed: 10,
+    className: "right",
+  },
+  {
+    category: "WEB DEVELOPMENT",
+    technology: "LARAVEL",
+    title: "SPA WEB APP - SPA BOOKING RESERVATION SYSTEM",
+    href: "https://spa.oxindosolution.com/",
+    direction: "left",
+    speed: -8,
+  },
+  {
+    category: "WEB DEVELOPMENT",
+    technology: "LARAVEL",
+    title: "INVENTORY WEBSITE - WEB BASED INVENTORY MANAGEMENT SYSTEM",
+    href: "https://github.com/anggawidiarta/SistemInventaris-PKL/tree/master",
+    direction: "right",
+    speed: 8,
+  },
+  {
+    category: "MACHINE LEARNING",
+    technology: "PYTHON & JUPYTER NOTEBOOK",
+    title: "SENTIMENT ANALYSIS - TWITTER SENTIMENT ANALYSIS",
+    href: "https://rosadecor.my.canva.site/thesis-showcase",
+    direction: "left",
+    speed: -8,
+  },
+  {
+    category: "UI DEVELOPMENT",
+    technology: "FIREBASE",
+    title: "QUOTES SHARING WEB APP - KATA KITA QUOTES SHARING",
+    href: "https://katakita-quotes-sharing.vercel.app/",
+    direction: "right",
+    speed: -8,
+    className: "gradient",
+  },
+  {
+    category: "CREATIVE DEVELOPMENT",
+    technology: "PORTFOLIO EXPLORATION",
+    title: "DOTAKU — MOBILE APP FOR HERO INFORMATION",
+    href: "https://github.com/anggawidiarta/Dotaku-MobileApp",
+    direction: "left",
+    speed: 8,
+  },
+  {
+    category: "CREATIVE DEVELOPMENT",
+    technology: "PORTFOLIO EXPLORATION",
+    title: "PLAYGROUND - JS AND TS MINI PROJECT",
+    href: "https://javascript-playground-anggawidiarta.vercel.app/",
+    direction: "right",
+    speed: 8,
+  },
+] as const;
+---
+
+<section class="home__projects">
+  {
+    projects.map((project, index) => (
+      <>
+        <ProjectLine position={index % 2 === 0 ? "right" : "left"} />
+        <ProjectCard {...project} />
+      </>
+    ))
+  }
+  <ProjectLine position="right" />
+</section>

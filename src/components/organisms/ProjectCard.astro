@@ -1,0 +1,40 @@
+---
+import ProjectLabel from "../atoms/ProjectLabel.astro";
+import ProjectTitle from "../molecules/ProjectTitle.astro";
+import ProjectLink from "../molecules/ProjectLink.astro";
+
+interface Props {
+  category: string;
+  technology: string;
+  title: string;
+  href: string;
+  direction: "left" | "right";
+  speed: number;
+  className?: string;
+}
+
+const {
+  category,
+  technology,
+  title,
+  href,
+  direction,
+  speed,
+  className = "",
+} = Astro.props;
+---
+
+<div class={`home__projects__project ${className}`}>
+  <ProjectLabel category={category} technology={technology} />
+
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="home__projects__project__link"
+  >
+    <ProjectTitle title={title} direction={direction} speed={speed} />
+  </a>
+
+  <ProjectLink href={href} />
+</div>
