@@ -4,6 +4,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import each from "lodash/each";
 import { copyText } from "./utils/index";
+import { playClickSound } from "./utils/sound";
+import debounce from "lodash/debounce";
 
 const toContactButtons = document.querySelectorAll(".contact-scroll");
 const footer = document.getElementById("js-footer");
@@ -21,6 +23,26 @@ document.addEventListener("DOMContentLoaded", () => {
     home.style.display = "block";
     home.classList.add("animate__animated", "animate__fadeIn");
   }, 2000);
+
+  const projectLinks = document.querySelectorAll(
+    ".home__projects__project__link, .project__link a"
+  );
+
+  const debouncedPlaySound = debounce(() => {
+    playClickSound();
+  }, 100);
+
+  projectLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      debouncedPlaySound();
+
+      setTimeout(() => {
+        window.open(link.href, "_blank", "noopener,noreferrer");
+      }, 150);
+    });
+  });
 });
 
 gsap.registerPlugin(ScrollTrigger);
